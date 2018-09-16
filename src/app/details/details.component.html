@@ -1,7 +1,11 @@
-<h1>{{ user$.name }}</h1>
+<div class="user-details__header">
+  <a routerLink="/">Back</a>
+  <span class="divider">-</span>
+  <h1 class="user-details__name">{{ user$.name }}</h1>
+</div>
 
-<ul>
-  <li><strong>Username:</strong> {{ user$.username }}</li>
-  <li><strong>Email:</strong> {{ user$.email }}</li>
-  <li><strong>Phone:</strong> {{ user$.phone }}</li>
+<ul class="user-details__list">
+  <li class="user-details__list-item"><strong>Username:</strong> {{ user$.username }}</li>
+  <li class="user-details__list-item"><strong>Email:</strong> {{ user$.email }}</li>
+  <li class="user-details__list-item"><strong>Phone:</strong> {{ user$.phone }}</li>
 </ul>

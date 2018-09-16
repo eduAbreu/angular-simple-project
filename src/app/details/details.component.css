@@ -1,0 +1,34 @@
+.user-details__header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-details__name {
+  font-size: 1.5rem;
+  margin: 0px;
+}
+
+.user-details__list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.user-details__list-item {
+  background: #fff;
+  border-radius: 4px;
+  padding: 10px;
+  color: #575757;
+  margin-bottom: 10px;
+}
+
+.user-details__list-item strong {
+  color: #007bff;
+  font-size: 1.1rem;
+}
+
+.divider {
+  margin: 0px 10px 0px 5px;
+}

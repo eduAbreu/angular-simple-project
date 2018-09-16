@@ -11,6 +11,7 @@
 }
 
 .users__list-item-link {
+  position: relative;
   display: block;
   font-size: 1.5rem;
   background-color: #fff;
@@ -21,11 +22,32 @@
   cursor: pointer;
   color: #575757;
   transition: all 250ms ease-in;
+  overflow: hidden;
+  z-index: 2;
 }
 
 .users__list-item-link:hover,
 .users__list-item-link:focus {
   text-decoration: none;
+}
+
+.users__list-item-link:after {
+  content: '';
+  width: 100%;
+  height: 100%;
   background-color: #007bff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  transform: translateY(calc(100% - 4px));
+  transition: transform 200ms ease-in;
+}
+
+.users__list-item-link:hover {
   color: #fff;
+}
+
+.users__list-item-link:hover:after {
+  transform: translateY(0);
 }

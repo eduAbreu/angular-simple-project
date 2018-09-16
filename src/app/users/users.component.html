@@ -1,12 +1,7 @@
-<h1>List of Users</h1>
+<h2 class="users__title">List of Users</h2>
 
-<ul>
-  <li *ngFor="let user of users$">
-    <a routerLink="/details/{{user.id}}">{{ user.name }}</a>
-
-    <ul>
-      <li>{{ user.email }}</li>
-      <li><a href="http://{{ user.website }}">{{ user.website }}</a></li>
-    </ul>
+<ul class="users__list row row-eq-height">
+  <li class="col-12 col-sm-6" *ngFor="let user of users$">
+    <a class="users__list-item-link" routerLink="/details/{{user.id}}">{{ user.name }}</a>
   </li>
 </ul>

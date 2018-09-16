@@ -1,0 +1,31 @@
+.users__title {
+  font-size: 1.8rem;
+  padding-bottom: 10px;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #dedede;
+}
+
+.users__list {
+  list-style: none;
+  padding: 0px;
+}
+
+.users__list-item-link {
+  display: block;
+  font-size: 1.5rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 20px rgba( 0, 0, 0, 0.2 );
+  margin-bottom: 30px;
+  cursor: pointer;
+  color: #575757;
+  transition: all 250ms ease-in;
+}
+
+.users__list-item-link:hover,
+.users__list-item-link:focus {
+  text-decoration: none;
+  background-color: #007bff;
+  color: #fff;
+}
